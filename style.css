@@ -1,8 +1,9 @@
- *{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   background-color: #BEE5FF;
 }
@@ -41,54 +42,17 @@ header{
 }
 
 /* Add a color to the active/current link */
-.navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Add a black background color to the top navigation */
-/*
-.navbar {
-  background-color: #BEE5FF;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-/*
-ul{
-  list-style-type: none; /*fjerner punkter*/
-  /*
-}
-
-
-li a{
-  float: right;
-  text-decloration: none;
-  padding: 16px 16px 16px;
-
-}
-
-/* Change the color of links on hover */
-/*
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
 /*
 .navbar a.active {
   background-color: #04AA6D;
   color: white;
+}
+*/
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -250%);
+  font-size: 70px;
 }
