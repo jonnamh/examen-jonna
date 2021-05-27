@@ -209,7 +209,7 @@ nav ul{
 
 .boksen .contactInfo .box{
   position: relative;
-  padding: 20px 0;
+  padding: 40px 20px;
   display: flex;
 }
 
@@ -220,7 +220,8 @@ nav ul{
   display: flex;
   justify-content: center;
   border-radius:50%;
-  font-size: 22px;
+  align-items: center;
+  font-size: 25px;
 }
 
 .boksen .contactInfo .box .tekst{
@@ -233,7 +234,7 @@ nav ul{
 }
 
 .boksen .contactInfo .box .tekst h3{
-  font-weight: 500;
+  font-weight: 700;
   color: #2F4C2A;
 }
 
@@ -242,6 +243,7 @@ nav ul{
   width: 40%;
   padding: 40px;
   background: #fff;
+  border-radius: 5%;
 }
 
 .contactForm h2 {
@@ -296,18 +298,19 @@ nav ul{
   padding: 10px;
   font-size: 18px;
 }
-
 /* Kontakt slut*/
 
 
+/* footer start*/
+
+
+/*footer slut*/
 
 
 
 
 
-/* virker ikke endnu*/
-/*til tlf skærm*/
-/*
+
 @media screen and (max-width: 479px){
   .container{
     width: 80%;
@@ -339,5 +342,25 @@ nav ul{
   .content-section .title{
     text-align: center;
     font-size: 19px;
+  }
+
+  .contact{
+    padding: 50px;
+  }
+
+  .boksen{
+    flex-direction: column;
+  }
+
+  .boksen .contactInfo{
+    margin-bottom: 10px;
+  }
+
+  .boksen .contactInfo{
+    width: 100%;
+  }
+
+  .contactForm{
+    width: 100%;
   }
 }
