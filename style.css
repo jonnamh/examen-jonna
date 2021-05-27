@@ -84,6 +84,11 @@ nav ul{
   width: 55%;
 }
 
+.titel{
+
+}
+
+
 .image-section{
   float: right;
   width: 45%;
@@ -99,14 +104,63 @@ nav ul{
 }
 
 .content-section .content p{
-  margin-top: 1px;
+  margin-top: 20px;
   font-size: 18px;
   line-height: 1.5;
 }
 /* main/ side slut*/
 
 /* Projekter start*/
+.title {
+  height: 100%;
+}
 
+
+.projekter {
+  margin-top: 1px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #eee;
+}
+
+.projekter:hover .overlay{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.projekter:hover .overlayFade{
+  width: 100%;
+}
+
+.overlayFade {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #d6b5bb96;
+}
 
 
 
