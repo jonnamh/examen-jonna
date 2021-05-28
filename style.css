@@ -16,7 +16,12 @@ header{
   align-items: center;
   padding: 30px 10%;
   font-size: 23px;
+  width: 100%;
+  position: fixed;
+  background-color: #BEE5FF;
 }
+
+
 
 .logo{
   cursor: pointer;
@@ -341,8 +346,51 @@ nav ul{
 
 
 /* footer start*/
+.container-footer{
+  background-color: #212329;
+}
 
+.footer{
+  width: 100%
+  background-color: ;
+  color: #2F4C2A;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
 
+.footer-header{
+  flex: 1 1 70%;
+  min-width: 25px;
+}
+
+.footer-header h2{
+  margin: 10px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.footer-header p{
+  margin: 10px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.footer-medier{
+  flex: 1 1 30%;
+  min-width: 15px;
+  margin-top: 10px;
+  color: #fff;
+}
+.footer-medier a{
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  margin: 10px;
+
+}
 /*footer slut*/
 
 
