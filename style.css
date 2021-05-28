@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body{
@@ -37,7 +38,16 @@ nav ul{
 
 .navbar li{
   padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.navbar li a {
+  text-decoration: none;
+}
+
+
 
 .navbar li a::after{
   content: "";
@@ -60,8 +70,18 @@ nav ul{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -250%);
-  font-size: 70px;
+  transform: translate(-50%, -200%);
+  font-size: 75px;
+  font-family: 'Sacramento', cursive;
+}
+
+.centered h5{
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  font-family: 'Montserrat', sans-serif;
 }
 /* Forside slut */
 
@@ -76,22 +96,27 @@ nav ul{
   width: 80%;
   display: block;
   margin: auto;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .content-section{
   float: left;
   width: 55%;
+  padding-top; 50px;
 }
 
 .titel{
+    font-family: 'Montserrat', sans-serif;
+}
 
+.undertekst{
+  padding-top: 20px;
 }
 
 
 .image-section{
   float: right;
-  width: 45%;
+  width: 40%;
 }
 
 .image-section img{
@@ -111,18 +136,32 @@ nav ul{
 /* main/ side slut*/
 
 /* Projekter start*/
-.title {
+#projekter {
   height: 100%;
+  align-items: center;
 }
 
+.mamma1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-.projekter {
-  margin-top: 1px;
+.mamma2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projekter{
+  margin: 10px;
   position: relative;
   width: 400px;
   height: 400px;
   display: inline-block;
+
 }
+
 
 .image {
   display: block;
