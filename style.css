@@ -34,7 +34,6 @@ header{
 
   list-style-type: none; /*fjerner punkter*/
   cursor: pointer;
-  position: sticky;
 }
 
 nav ul{
@@ -110,12 +109,15 @@ nav ul{
   padding-top; 50px;
 }
 
-.titel{
-    font-family: 'Montserrat', sans-serif;
+.titel h1{
+  font-family: 'Montserrat', sans-serif;
 }
 
-.undertekst{
+.undertekst p{
   padding-top: 20px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -129,21 +131,25 @@ nav ul{
   height: auto;
 }
 
-.content-section .titel{
+section .titel{
   font-size: 20px;
-}
-
-.content-section .content p{
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 1.5;
 }
 /* main/ side slut*/
 
 /* Projekter start*/
 #projekter {
   height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.mycontent{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .mamma1{
@@ -163,52 +169,29 @@ nav ul{
   position: relative;
   width: 400px;
   height: 400px;
-  display: inline-block;
+  display: flex;
 
 }
 
 
 .image {
-  display: block;
+  display: flex;
   width: 400px;
   height: 400px;
 }
 
-.overlay {
-  position: absolute;
-  transition: all .3s ease;
-  opacity: 0;
-  background-color: #eee;
-}
-
-.projekter:hover .overlay{
-  opacity: 1;
-}
 
 .text {
   color: white;
   position: absolute;
   top: 50%;
+  cursor: pointer;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 30px;
 }
+/*projekter slut*/
 
-.projekter:hover .overlayFade{
-  width: 100%;
-}
-
-.overlayFade {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #d6b5bb96;
-}
-
-.text{
-  margin: auto;
-}
 
 /* kontakt form*/
 .contact{
@@ -399,6 +382,17 @@ nav ul{
 
 
 @media screen and (max-width: 479px){
+
+  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -1400%);
+      font-size: 30;
+      font-family: 'Sacramento', cursive;
+      margin: 0px;
+    }
+
   .container{
     width: 80%;
     display: block;

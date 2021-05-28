@@ -1,0 +1,201 @@
+/* CSS for waver.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #BEE5FF;
+}
+
+/*navbar start*/
+header{
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+  padding: 30px 10%;
+  font-size: 23px;
+  width: 100%;
+  position: fixed;
+  background-color: #BEE5FF;
+}
+
+
+
+.logo{
+  cursor: pointer;
+  position: sticky;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none; /*fjerner punkter*/
+  cursor: pointer;
+  position: sticky;
+}
+
+nav ul{
+  display: flex;  /*ligger ved siden af hinanden*/
+}
+
+.navbar li{
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar li a {
+  text-decoration: none;
+}
+
+
+
+.navbar li a::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #D6B5BB;
+  display: block;
+  margin: auto;
+  transition:0.5s;
+}
+
+.navbar li a:hover::after{
+  width: 100%;
+}
+/* navbar slut*/
+
+/* Forside start*/
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  font-size: 75px;
+  font-family: 'Sacramento', cursive;
+}
+
+.centered h5{
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  font-family: 'Montserrat', sans-serif;
+}
+/* Forside slut */
+
+
+/*Main/side start*/
+/*main/side start*/
+.section{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.content-section{
+  float: left;
+  width: 55%;
+  padding-top; 50px;
+}
+
+.titel h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.undertekst p{
+  padding-top: 20px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.image-section img{
+  width: 100%;
+  height: auto;
+}
+
+
+/* main/ side slut*/
+
+.sprite {
+	float: right;
+  width: 40%;
+	min-width: 15px;
+	margin-top: 10px;
+	width: 500px;
+	height: 500px;
+  border-radius: 20%;
+	margin: 2% auto;
+	background: url('viggos.png') 0 0 no-repeat;
+	animation: play 1s steps(5) infinite;
+}
+
+
+@keyframes play {
+	0%{background-position:0px;}
+   100% { background-position: -2500px; }
+}
+/*main/side slut*/
+
+
+
+/* footer start*/
+.container-footer{
+  background-color: #212329;
+}
+
+.footer{
+  width: 100%
+  background-color: ;
+  color: #2F4C2A;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-header{
+  flex: 1 1 70%;
+  min-width: 25px;
+}
+
+.footer-header h2{
+  margin: 10px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.footer-header p{
+  margin: 10px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.footer-medier{
+  flex: 1 1 30%;
+  min-width: 15px;
+  margin-top: 10px;
+  color: #fff;
+}
+.footer-medier a{
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  margin: 10px;
+
+}
+/*footer slut*/
