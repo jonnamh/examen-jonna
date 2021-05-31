@@ -98,6 +98,7 @@ header{
   height: auto;
 }
 
+
 /*main/side slut*/
 
 
@@ -178,3 +179,70 @@ header{
     display: block;
     margin: auto;
   }
+
+
+
+
+
+
+@charset "UTF-8";
+/* css document */
+div{
+  width: 100px;
+  height: 100px;
+  background: lightpink;
+
+  animation-name: moving-box;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /*animation-direction: alternate;*/
+}
+
+
+
+@keyframes moving-box{
+  0%{
+    transform: translateX(0px) translateY(0px);
+  }
+  25%{
+    transform: translateX(300px) translateY(0px);
+  }
+  50%{
+    transform: translateX(300px) translateY(300px);
+  }
+  75%{
+    transform: translateX(0px) translateY(300px);
+  }
+  100%{
+    transform: translateX(0px) translateY(0px);
+}
+}
+
+.div{
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+
+  animation-name: moving-box2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving-box2{
+  0%{
+    transform: translateX(0px) translateY(0px);
+  }
+  25%{
+    transform: translateX(0px) translateY(300px);
+  }
+  50%{
+    transform: translateX(300px) translateY(300px);
+  }
+  75%{
+    transform: translateX(300px) translateY(0px);
+  }
+  100%{
+    transform: translateX(0px) translateY(0px);
+
+}
+}

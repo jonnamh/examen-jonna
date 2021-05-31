@@ -26,47 +26,9 @@ header{
 .logo{
   cursor: pointer;
   position: sticky;
+  width: 100px;
 }
 
-.navbar{
-  display: flex;
-  justify-content: space-between;
-
-  list-style-type: none; /*fjerner punkter*/
-  cursor: pointer;
-  position: sticky;
-}
-
-nav ul{
-  display: flex;  /*ligger ved siden af hinanden*/
-}
-
-.navbar li{
-  padding: 0px 20px;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.navbar li a {
-  text-decoration: none;
-}
-
-
-
-.navbar li a::after{
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #D6B5BB;
-  display: block;
-  margin: auto;
-  transition:0.5s;
-}
-
-.navbar li a:hover::after{
-  width: 100%;
-}
 /* navbar slut*/
 
 /* Forside start*/
@@ -87,6 +49,7 @@ nav ul{
   left: 50%;
   transform: translate(-50%, 150%);
   font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 /* Forside slut */
 
@@ -113,12 +76,14 @@ nav ul{
 
 .titel h1{
   font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 .undertekst p{
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Montserrat', sans-serif;
+  color: #212329;
 
 }
 

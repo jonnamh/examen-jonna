@@ -10,34 +10,34 @@ body{
 }
 
 /*navbar start*/
-header{
+.header{
   display: flex;
   justify-content: space-between;;
   align-items: center;
   padding: 30px 10%;
   font-size: 23px;
   width: 100%;
-  position: fixed;
   background-color: #BEE5FF;
+  position: fixed;
 }
 
 
 
 .logo{
   cursor: pointer;
-  position: sticky;
+  width: 100px;
 }
 
 .navbar{
   display: flex;
   justify-content: space-between;
-
   list-style-type: none; /*fjerner punkter*/
   cursor: pointer;
 }
 
 nav ul{
   display: flex;  /*ligger ved siden af hinanden*/
+  color: #2F4C2A
 }
 
 .navbar li{
@@ -45,6 +45,7 @@ nav ul{
   font-size: 20px;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 .navbar li a {
@@ -77,6 +78,7 @@ nav ul{
   transform: translate(-50%, -200%);
   font-size: 75px;
   font-family: 'Sacramento', cursive;
+  color: #212329;
 }
 
 .centered h5{
@@ -86,6 +88,7 @@ nav ul{
   left: 50%;
   transform: translate(-50%, 150%);
   font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 /* Forside slut */
 
@@ -100,23 +103,25 @@ nav ul{
   width: 80%;
   display: block;
   margin: auto;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .content-section{
   float: left;
   width: 55%;
-  padding-top; 50px;
+  padding-top: 50px;
 }
 
 .titel h1{
   font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 .undertekst p{
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Montserrat', sans-serif;
+  color: #212329;
 
 }
 
@@ -133,16 +138,19 @@ nav ul{
 
 section .titel{
   font-size: 20px;
+  color: #212329;
 }
 /* main/ side slut*/
 
 /* Projekter start*/
-#projekter {
+h1 {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #212329;
 
 }
 
@@ -150,15 +158,17 @@ section .titel{
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
-.mamma1{
+.container-projekter1{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.mamma2{
+.container-projekter2{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -170,7 +180,6 @@ section .titel{
   width: 400px;
   height: 400px;
   display: flex;
-
 }
 
 
@@ -182,7 +191,7 @@ section .titel{
 
 
 .text {
-  color: white;
+  color: #212329;
   position: absolute;
   top: 50%;
   cursor: pointer;
@@ -212,12 +221,14 @@ section .titel{
 .contact .content h2{
   font-size: 36px;
   font-weight: 500;
-  color: #2F4C2A;
+  font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 .contact .content p{
   font-weight: 300;
-  color: #2F4C2A;
+  color: #212329;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .boksen{
@@ -249,6 +260,8 @@ section .titel{
   border-radius:50%;
   align-items: center;
   font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 .boksen .contactInfo .box .tekst{
@@ -258,11 +271,14 @@ section .titel{
   color: #2F4C2A;
   flex-direction: column;
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 .boksen .contactInfo .box .tekst h3{
   font-weight: 700;
-  color: #2F4C2A;
+  font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 
@@ -277,6 +293,8 @@ section .titel{
   font-size:30px;
   color: #333;
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #212329;
 }
 
 .contactForm .inputBox {
@@ -335,7 +353,6 @@ section .titel{
 
 .footer{
   width: 100%
-  background-color: ;
   color: #2F4C2A;
   display: flex;
   justify-content: center;
@@ -383,15 +400,21 @@ section .titel{
 
 @media screen and (max-width: 479px){
 
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none; /*fjerner punkter*/
+    cursor: pointer;
+  }
+
   .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -1400%);
-      font-size: 30;
-      font-family: 'Sacramento', cursive;
-      margin: 0px;
-    }
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-size: 40px;
+  }
 
   .container{
     width: 80%;
